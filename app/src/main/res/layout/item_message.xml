@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/blue_grey_200"
+                android:orientation="horizontal"
+                android:id="@+id/l1Message"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:text="Texts"
+                    android:id="@+id/tvTitle"
+                    android:layout_weight="1"
+                    android:padding="5dp"/>
+                <ImageButton
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@color/blue_grey_200"
+                    android:id="@+id/ibDelete"
+                    android:src="@drawable/ic_baseline_delete_24"/>
+
+            </LinearLayout>
+        </LinearLayout>
+        
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

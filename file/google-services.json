@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "32269360031",
+    "firebase_url": "https://purpleriot-70b6a.firebaseio.com",
+    "project_id": "purpleriot-70b6a",
+    "storage_bucket": "purpleriot-70b6a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:32269360031:android:b1800f58cb89d85672bbaa",
+        "android_client_info": {
+          "package_name": "com.example.purpleriot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "32269360031-injtleckj9gu216d36lfnaicf57enoed.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwV9BCKDr3M3sG9aTuu38_BUKCbipgBcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "32269360031-injtleckj9gu216d36lfnaicf57enoed.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

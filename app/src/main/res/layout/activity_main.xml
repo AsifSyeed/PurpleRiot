@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="35dp"
+    android:paddingEnd="35dp"
+    android:orientation="vertical"
+    android:background="@color/blue_grey_900"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:padding="35dp">
+
+            <ImageView
+                android:layout_width="303dp"
+                android:layout_height="255dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/blue_grey_500"
+                android:textStyle="bold"
+                />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:id="@+id/email_login"
+                android:singleLine="true"
+                android:textColor="@color/blue_grey_300">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/blue_grey_500"
+
+                />
+            
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-4dp"
+                android:layout_marginRight="-4dp"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:id="@+id/pass_login"
+                android:singleLine="true"
+                android:textColor="@color/blue_grey_300"
+                android:inputType="textPassword">
+
+            </com.google.android.material.textfield.TextInputEditText>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"></View>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:text="Forgot Password?"
+                android:onClick="ForgotPass"
+                android:textColor="@color/blue_grey_400"
+                android:textStyle="bold"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                />
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="LoginUser"
+                android:background="@drawable/button_bg"
+                android:textAllCaps="false"
+                android:textColor="@color/blue_grey_900"
+                android:text="Login"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New user?"
+                    android:textColor="@color/blue_grey_300"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    ></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  "
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign up"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:onClick="gotoRegister"
+                    android:textColor="@color/green_300"
+                    android:textStyle="bold"
+                    />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+        
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateTint="@color/green_400"
+            android:visibility="gone"
+            android:id="@+id/login_progress"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
